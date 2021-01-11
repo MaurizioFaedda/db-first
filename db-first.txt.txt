@@ -1,0 +1,20 @@
+id 						INT, PRIMARY KEY (=> AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
+tipo_veicolo			VARCHAR(15), NOT NULL, DEFAULT("altro")
+marca					VARCHAR(30), NOT NULL
+modello					VARCHAR(30), NOT NULL
+versione				VARCHAR(50), NULL
+id_proprietario			INT, NOT NULL, UNIQUE
+targa					VARCHAR (10), NOT NULL, UNIQUE
+paese_immatricolazione	VARCHAR (2), NULL DEFAULT("IT")
+anno_immatricolazione	DATE(YYYY), NOT NULL
+numero_proprietari 		TINYINT, NULL
+prezzo					MEDIUMINT, NOT NULL, INDEX
+chilometri				MEDIUMINT, NOT NULL, INDEX
+carburante				VARCHAR(20), NULL
+condizioni				VARCHAR(20), NULL
+cambio					VARCHAR(20), NULL
+potenza					SMALLINT, NULL
+colore					VARCHAR(20), NULL
+posti					TYNYINT, NULL
+climatizzatore			TINYINT, NULL, DEFAULT(1)
+disponibilità			TINYINT, NOT NULL, DEFAULT(1)
